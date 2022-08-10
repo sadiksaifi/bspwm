@@ -12,6 +12,10 @@ paru -S bspwm polybar sxhkd ttf-nerd-fonts-hack-complete-git udiskie udisks2 ala
 
 <br />
 
+### Screenshots
+
+<br />
+
 ![BSPWM](screenshots/Screenshot_1.png "BSPWM")
 
 <br />
