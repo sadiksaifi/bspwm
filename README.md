@@ -6,6 +6,10 @@
 paru -S bspwm polybar sxhkd ttf-nerd-fonts-hack-complete-git udiskie udisks2 alacritty dunst feh picom-ibhagwan-git xorg-xsetroot xorg-xbacklight xbanish pamixer neofetch tty-clock lf-bin htop exa
 ```
 
+#### or
+
+> By executing <i>install.sh</i> script
+
 <br />
 
 ![BSPWM](screenshots/Screenshot_1.png "BSPWM")
