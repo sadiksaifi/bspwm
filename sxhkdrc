@@ -124,13 +124,13 @@ super + w
 	$BROWSER
 
 super + n
-    	$TERMINAL -e nvim
+  $TERMINAL -e nvim
 
 super + m
 	$TERMINAL -e ncmpcpp
 
 super + o
-    	$TERMINAL -e lf
+  $TERMINAL -e lf
 
 #Run Launchers
 super + space
