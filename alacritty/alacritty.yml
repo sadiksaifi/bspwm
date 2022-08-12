@@ -69,4 +69,5 @@ colors:
     cyan: '#8ec07c'
     white: '#ebdbb2'
 
-theme: Gruvbox-Dark
+      #theme: Gruvbox-Dark
+theme: Solarized-Dark
