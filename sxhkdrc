@@ -23,8 +23,8 @@ Insert
 	$HOME/.config/bspwm/scripts/background.sh
 
 # set the window state
-#super + {t,shift + t,s,f}
-	#bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 #Toogle Floating 
 super + shift + f
@@ -39,7 +39,7 @@ super + shift + equal
 	$HOME/.config/bspwm/scripts/gaps.sh
 
 super + shift + p
-	$HOME/.config/bspwm/scripts/alacritty.sh
+	$HOME/.config/bspwm/scripts/$TERMINAL.sh
 	
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
@@ -75,25 +75,9 @@ ctrl + alt + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-####  Mouse Resize and Move  ###
-##
-## Mouse floating:
-##
-## Focus
-#~button1
-	#bspc pointer -g focus
-
-## Start move/resize
-#alt + button{1-3}
-	#; bspc pointer -g {move,resize_side,resize_corner}
-
-#alt + !button{1-3}
-	#bspc pointer -t %i, %i
-
-## End Move/Risize
-#alt + @button{1-3}
-	#bspc pointer -u
-
+###  Mouse Resize and Move  ###
+super + {z,x}
+    bspc config pointer_action1 {move,resize_corner}
 
 # Brighness control
 XF86MonBrightnessUp
@@ -130,7 +114,7 @@ super + m
 	$TERMINAL -e ncmpcpp
 
 super + o
-  $TERMINAL -e lf
+  $TERMINAL -e ranger
 
 #Run Launchers
 super + space
@@ -141,18 +125,17 @@ super + shift + Return
 	
 # terminal emulator
 super + Return
-	alacritty
+	$TERMINAL
  
 # ScratchPads with tdrop
 super + p
 	tdrop -ma -w 70% -h 65% -y 17% -x 15% -n 1 $TERMINAL -e htop
 
 super + r
-	tdrop -ma -w 70% -h 65% -y 17% -x 15% -n 2 $TERMINAL -e ranger
+	tdrop -ma -w 70% -h 65% -y 17% -x 15% -n 2 $TERMINAL -e lfub
 
 super + c
 	tdrop -ma -w 70% -h 65% -y 17% -x 15% -n 3 $TERMINAL -e tty-clock -c -s -t -B -C 7
 
 super + y
 	tdrop -ma -w 70% -h 65% -y 17% -x 15% -n 2 $TERMINAL
-
